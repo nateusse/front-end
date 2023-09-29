@@ -20,4 +20,3 @@ const wonderWoman: Character = {
 
 
 console.table(wonderWoman)
-export {}
