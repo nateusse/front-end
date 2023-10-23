@@ -1,0 +1,14 @@
+<div class="frame">
+  <div class="left">
+    <div class="value"><p><strong>{{ votes }} </strong></p></div>
+    <div class="label"><p><strong>POINTS</strong></p></div>
+  </div>
+  <div class="rigth">
+    <a href="{{ link }}" ><h3>{{ title }}</h3>  </a>
+    <ul>
+
+      <li> <mat-icon aria-hidden="true">arrow_upward</mat-icon><a href (click)="voteUp()">upvote</a></li>
+      <li> <mat-icon aria-hidden="true">arrow_downward</mat-icon><a href (click)="voteDown()">downvote</a></li>
+    </ul>
+  </div>
+</div>

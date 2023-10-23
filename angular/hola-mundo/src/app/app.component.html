@@ -1,13 +1,27 @@
 <app-user-list></app-user-list>
-<form class="ui large form segment">
-  <h3 class="ui header">Add a Link</h3>
+<form class="form">
+  <h3>Add a Link</h3>
 
-  <div class="field">
-    <label for="title">Title:</label>
-    <input name="title" id="title" />
+  <div layout="row" >
+    <div flex>
+      <mat-form-field class="field">
+        <mat-icon matSuffix layout="row" layout-margin>mode_edit</mat-icon>
+        <mat-label flex>Title:</mat-label>
+        <input matInput placeholder="Name of the article" #newtitle/>
+      </mat-form-field>
+    </div>
+
+
+  <div flex>
+    <mat-form-field class="field">
+      <mat-icon matSuffix>link</mat-icon>
+      <mat-label>Link:</mat-label>
+      <input matInput placeholder="Shared link" #newlink/>
+    </mat-form-field>
   </div>
-  <div class="field">
-    <label for="link">Link:</label>
-    <input name="link" id="link" />
-  </div>
+</div>
 </form>
+
+<button (click)="addArticle(newtitle, newlink)" > Submit link </button>
+
+<app-article></app-article>
