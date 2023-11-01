@@ -1,0 +1,11 @@
+<h2>Mision:</h2>
+<ul>
+  <li *ngFor="let tech of stack">Ser buena en {{tech}}</li>
+</ul>
+<!-- Property binding-->
+<button  type="button" [disabled]="!canClick" (click)="sayMessage()"> Trigger alert message </button>
+
+<p [id]="sayHelloId" [style.color]="fontColor">You can set my color in the component!</p>
+
+<p>My color is {{ fontColor }}</p>
+
